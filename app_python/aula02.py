@@ -17,3 +17,21 @@
 #     print("numero e par")
 # else:
 #     print(("nenhum numero par digitado "))
+nota1 =int (input("Primeira nota: "))
+if nota1>10:
+    a= int(input("Voce digitou a primeira nota errada"))
+nota2 =int(input("segunda nota: "))
+if nota2>10:
+    nota2= int(input("Voce digitou a segunda nota errada"))
+nota3 =int(input("terceiro nota: "))
+if nota3 >10:
+    nota3 = int(input("Voce digitou a terceira nota errada"))
+nota4 =int(input("quarto nota: "))
+if nota4 >10:
+    nota3 = int(input("Voce digitou a quarta nota errada"))
+media= (nota1+nota2+nota3+nota4)/4
+print("nota do aluno e " + str(media))
+# if nota1<=10and nota2<=10and nota3<=10 and  nota4<=10:
+
+# else:
+#     print("Nota digitada errada")
