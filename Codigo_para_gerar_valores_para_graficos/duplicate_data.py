@@ -5,7 +5,7 @@ DUPLICATE_QUANTITY = 3
 def openFile():
   with open('output.csv', 'r', newline='', encoding='utf-8') as file:
     data = []
-    reader = csv.reader(file)
+    reader = csv.reader(file,delimiter=';')
     for row in reader:
       data.append(row)
   
@@ -13,7 +13,7 @@ def openFile():
         
 def saveFile(values):
   with open('output_duplicated_year.csv', 'w', newline='', encoding='utf-8') as file:
-    writer = csv.writer(file)
+    writer = csv.writer(file, delimiter=';')
     writer.writerows(values)
 
 def duplicateData(values):

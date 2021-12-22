@@ -25,7 +25,7 @@ def formatValuesToSave(values):
   strToSave = '',
   
   for value in values: 
-    strValues = str(','.join(value))
+    strValues = str(';'.join(value))
     data.append(strValues)
   strToSave = '\n'.join(data)  
   return strToSave
