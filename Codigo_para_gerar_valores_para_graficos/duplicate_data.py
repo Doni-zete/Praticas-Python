@@ -1,6 +1,6 @@
 import csv
 
-DUPLICATE_QUANTITY = 3
+DUPLICATE_QUANTITY = 2
 
 def openFile():
   with open('output.csv', 'r', newline='', encoding='utf-8') as file:
