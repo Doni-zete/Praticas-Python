@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import re
 import os.path
+from duplicate_data import mainDuplicate
 
 # Open file to read the values
 
@@ -97,7 +98,10 @@ def main():
       data.append([year, name]) 
   
   
-  saveFile(yearFrequency(data))
+  saveFile(yearFrequencydata)()
+
+  #duplicar coluna anos
+  mainDuplicate()
   
   
 # Initialize the application
