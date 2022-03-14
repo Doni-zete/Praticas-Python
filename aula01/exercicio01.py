@@ -26,15 +26,16 @@ print(f'Ok, seu nome é: {nome} e sua idade:{idade}') """
 
 # Conversão de reais para dolar
 
-reais = input("Entre com o valor em Reais: ")
+# reais = input("Entre com o valor em Reais: ")
 
-conversao = float(reais) / 5.07
+# conversao = float(reais) / 5.07
 
-print(f"Valor de reais para dolar é: ${conversao}")
+# print(f"Valor de reais para dolar é: ${conversao}")
 
 
-dolar = input("Entre com o valor em Dolar: ")
+# dolar = input("Entre com o valor em Dolar: ")
 
-conversao = float(dolar) * 5.07
+# conversao = float(dolar) * 5.07
 
-print(f"Valor de dolar para reais é: ${conversao}")
+# print(f"Valor de dolar para reais é: ${conversao}")
+
