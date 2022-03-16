@@ -38,4 +38,3 @@ print(f'Ok, seu nome é: {nome} e sua idade:{idade}') """
 # conversao = float(dolar) * 5.07
 
 # print(f"Valor de dolar para reais é: ${conversao}")
-
