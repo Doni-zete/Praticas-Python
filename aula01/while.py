@@ -24,5 +24,17 @@ else:
 for x in s:
     print(x) """
 
-for x in range(5, 9):  # range(5) começa do 0 ate o 6
-    print(x)
+""" for x in range(5, 9):  # range(5) começa do 0 ate o 6
+    print(x) """
+
+""" 
+for x in range(7, 20):
+    print(x) """
+
+""" for x in range(3, 30, 7):
+    print(x) """
+
+for x in range(6):
+    print(x)  
+else:
+    print("Chegamos ao fim")      
