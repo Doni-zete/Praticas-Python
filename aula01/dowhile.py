@@ -13,6 +13,3 @@ print("Qual o numero correto?")
 print("Parabens voce acertou")
 
 print(bool(palpite))
-
-
-
