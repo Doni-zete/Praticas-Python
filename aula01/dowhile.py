@@ -7,9 +7,15 @@ palpite = 0
 numero = 9
 
 # while palpite != numero:
-print("Qual o numero correto?")
-# palpite = int(input())
-# print("Voce errou")
-print("Parabens voce acertou")
 
-print(bool(palpite))
+while True:
+    print("Qual o numero correto? ")
+    palpite = int(input())
+    if palpite == numero: #Estamos verificaando nosso código
+        print("Parabens voce acertou")
+        break
+    else:
+        print("Voce errou")
+else:
+    print("Erro na aplicção")
+    print(bool(palpite))
