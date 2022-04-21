@@ -1,6 +1,6 @@
 
 """
-Como achar o tatorial de um número
+Como achar o fatorial de um número
 """
 numero = int(input("Insira um numero:"))
 fatorial = 1
