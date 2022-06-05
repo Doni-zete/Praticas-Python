@@ -1,3 +1,4 @@
+# Classes Abstrata
 class Pessoa:
   # superclasse - classe mãe, clase pai
 
@@ -6,6 +7,7 @@ class Pessoa:
         self.data_nascimento = data
         self.cpf = cpf
         self.rg = rg
+        print("Executando o Construtor da classe")
 
     def imprimir_nome(self):
         return self.nome
@@ -13,14 +15,14 @@ class Pessoa:
     def trabalhar(self):
         print("Trabalhando...")
 
-
+# Classes Concretas
 class Administrador(Pessoa):
 
     def trabalhar(self):
         nome_classe = self.__class__.__name__
         print(f"Classe {nome_classe} Organizando Planilhas...")
 
-
+# Classes Concretas
 class Professor(Pessoa):
 
     def __init__(self, nome):
@@ -31,7 +33,7 @@ class Professor(Pessoa):
         nome_classe = self.__class__.__name__
         print(f"Classe {nome_classe} Ensinando...")
 
-
+# Classes Concretas
 class Aluno(Pessoa):
     # subclasse - classe filha, classe filho
 
@@ -44,6 +46,8 @@ class Aluno(Pessoa):
     def estudar(self):
         return "Estudando..."
 
+
+pessoa1 = Pessoa()
 
 professor1 = Professor('marcos')
 Administrador1 = Administrador()
@@ -66,7 +70,6 @@ print(type(professor1))
 
 
   """
-
 
 
 # get e set
@@ -102,11 +105,7 @@ print(aluno1.idade)
  """
 
 
-
-
-
 # class Quadrado
-
 
 
 """ class Quadrado:
