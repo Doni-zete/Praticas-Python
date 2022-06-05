@@ -6,10 +6,30 @@ class Pessoa:
         self.data_nascimento = data
         self.cpf = cpf
         self.rg = rg
-        print("Classe PEssoa")
 
     def imprimir_nome(self):
         return self.nome
+
+    def trabalhar(self):
+        print("Trabalhando...")
+
+
+class Administrador(Pessoa):
+
+    def trabalhar(self):
+        nome_classe = self.__class__.__name__
+        print(f"Classe {nome_classe} Organizando Planilhas...")
+
+
+class Professor(Pessoa):
+
+    def __init__(self, nome):
+        super().__init__(nome)
+        self.disciplinas = []
+
+    def trabalhar(self):
+        nome_classe = self.__class__.__name__
+        print(f"Classe {nome_classe} Ensinando...")
 
 
 class Aluno(Pessoa):
@@ -25,17 +45,13 @@ class Aluno(Pessoa):
         return "Estudando..."
 
 
-class Professor(Pessoa):
-
-    def __init__(self, nome):
-        super().__init__(nome)
-        self.disciplinas = []
-
-    def lecionar(self):
-        return "Ensinando..."
+professor1 = Professor('marcos')
+Administrador1 = Administrador()
+professor1.trabalhar()
+Administrador1.trabalhar()
 
 
-aluno1 = Aluno('ana')
+""" aluno1 = Aluno('ana')
 print(aluno1.imprimir_nome())
 
 
@@ -43,7 +59,7 @@ professor1 = Professor("MArcos")
 print(professor1.imprimir_nome())
 
 print(aluno1.estudar())
-print(professor1.lecionar())
+print(professor1.lecionar()) """
 
 """ print(type(aluno1))
 print(type(professor1))
@@ -53,15 +69,7 @@ print(type(professor1))
 
 
 
-
-
-
-
-
-
-
-
-
+# get e set
 
 """ # get e set
     @property
@@ -97,11 +105,7 @@ print(aluno1.idade)
 
 
 
-
-
-
-
-
+# class Quadrado
 
 
 
