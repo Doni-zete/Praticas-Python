@@ -1,5 +1,7 @@
+from abc import ABC, abstractclassmethod
+
 # Classes Abstrata
-class Pessoa:
+class Pessoa(ABC):
   # superclasse - classe mãe, clase pai
 
     def __init__(self, nome=None, data=None, cpf=None, rg=None):
@@ -12,9 +14,9 @@ class Pessoa:
     def imprimir_nome(self):
         return self.nome
 
+    @abstractclassmethod
     def trabalhar(self):
-        print("Trabalhando...")
-
+        pass
 # Classes Concretas
 class Administrador(Pessoa):
 
@@ -34,7 +36,7 @@ class Professor(Pessoa):
         print(f"Classe {nome_classe} Ensinando...")
 
 # Classes Concretas
-class Aluno(Pessoa):
+class Aluno():
     # subclasse - classe filha, classe filho
 
     def __init__(self, nome):
@@ -47,12 +49,12 @@ class Aluno(Pessoa):
         return "Estudando..."
 
 
-pessoa1 = Pessoa()
-
 professor1 = Professor('marcos')
 Administrador1 = Administrador()
 professor1.trabalhar()
 Administrador1.trabalhar()
+
+
 
 
 """ aluno1 = Aluno('ana')

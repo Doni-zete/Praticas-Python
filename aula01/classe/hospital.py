@@ -26,5 +26,5 @@ print(paciente.__dict__)
 print(Paciente.idadeAnoNascimento(2001)) """
 
 paciente = Paciente.idadeAnoNascimento('Mona Lisa', 1957, '000.000.000-00', 'mona@gmail.com')
-print(paciente.__dict__)
+print(paciente.__dict__["email"])
 print(paciente.idade)

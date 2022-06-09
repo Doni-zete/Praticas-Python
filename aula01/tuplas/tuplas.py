@@ -58,7 +58,7 @@ del tupla
 print(tupla) """
 
 
-tupla = ("item1",)
+""" tupla = ("item1",)
 tupla2 = ("a", "b")
 
 tupla = "item1", "item2", "item3"
@@ -70,3 +70,17 @@ for variavel in tupla:
 
 for x in range(len(tupla)):
     print(x)
+
+
+(x, y, z) = tupla
+print(x)
+print(y)
+print(z)
+
+print(x) """
+
+lista = ["item1", "item2", "item3"]
+(x, *y) = lista
+print("x:", x)
+print("y:", y)
+print("z:", x)
